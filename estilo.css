@@ -1,0 +1,282 @@
+:root {
+  --primary: rgb(173, 4, 4);
+  --textHeader: #fff;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.navbar .nav-link {
+  color: var(--textHeader) !important;
+}
+
+.btn-outline-success {
+  color: var(--textHeader) !important;
+  border-color: var(--textHeader) !important;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  background-color: var(--primary);
+  
+  padding: 3vh;
+}
+
+.navbar-brand {
+  color: var(--textHeader);
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.navbar-toggler-icon {
+  background-color: var(--textHeader);
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 2vh;
+}
+
+.navbar-nav .nav-link {
+  color: var(--textHeader);
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  color: darken(var(--textHeader), 10%);
+}
+
+
+.hero-section {
+  
+  background: #121212; /* Fallback for browsers that don't support gradients */
+  background: linear-gradient(
+    135deg,
+    #121212 25%,
+    #1a1a1a 25%,
+    #1a1a1a 50%,
+    #121212 50%,
+    #121212 75%,
+    #1a1a1a 75%,
+    #1a1a1a
+  );
+  background-size: 40px 40px;
+
+  /* Animation */
+  animation: move 4s linear infinite;
+
+  color: #fff;
+  text-align: center;
+  padding: 5vh 0;
+}
+
+.hero-section h1 {
+  color: var(--primary);
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.hero-section .lead {
+  color: #fff;
+  font-size: 1.25em;
+  margin-bottom: 5vh;
+}
+
+.hero-section form {
+  max-width: 60vh;
+  margin: 0 auto;
+}
+
+.hero-section input.form-control {
+  width: 100%;
+  margin-bottom: 1vh;
+  padding: 1vh;
+  border: none;
+  border-radius: 1vh;
+}
+
+.hero-section button.btn-primary {
+  width: 100%;
+  padding: 1.2vh;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 1vh;
+  cursor: pointer;
+}
+
+.hero-section button.btn-primary:hover {
+  background-color:var(--textHeader);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.hero-section img.img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin-top: 5vh;
+}
+
+.about-us-section {
+  background-color: #f8f9fa;
+  padding: 10vh 0;
+}
+
+.about-us-section h2 {
+  color: var(--primary);
+}
+
+.about-us-section p {
+  color: #495057;
+}
+
+.about-us-section img {
+  max-width: 75%;
+  height: auto;
+
+}
+
+.crypto-news-section {
+  padding: 10vh 5vh;
+}
+
+.crypto-news-card {
+  background-color: #fff;
+  border-radius: 2vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5vh;
+
+}
+
+.crypto-news-card img {
+  max-width: 100%;
+  border-top-left-radius: 2vh;
+  border-top-right-radius: 2vh;
+}
+
+.crypto-news-card .card-body {
+  padding: 2vh;
+}
+
+.crypto-news-card h3 {
+  color: var(--primary);
+}
+
+.testimonios {
+  width: 90%;
+  padding: 4vh 1vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+  background-color: #fff;
+  border-radius: 2vh;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-card img {
+  max-width: 10%;
+  border-radius: 50%;
+  margin-bottom: 2vh;
+}
+
+.testimonial-card h4 {
+  color: var(--primary);
+}
+
+
+
+.fact {
+  text-align: center;
+
+  padding: 3vh;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgb(255, 249, 249);
+  transition: transform 0.3s ease-in-out;
+  color: var(--textHeader);
+  margin: 20%;
+}
+
+.fact:hover {
+  transform: scale(1.05);
+}
+
+.fact h2 {
+  font-size: 3rem;
+  color: var(--textHeader);
+}
+
+.fact p {
+  font-size: 1.5rem;
+}
+
+
+
+.newsletter-section {
+  padding: 5vh;
+  margin-bottom: 10vh;
+ 
+}
+
+.newsletter-text h2 {
+  font-size: 250%;
+  margin-bottom: 20px;
+  color: var(--textHeader);
+}
+
+.newsletter-text p {
+  font-size: 100%;
+
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-form input {
+  width: 60%;
+  padding: 1vh;
+  margin-bottom: 1vh;
+  border: none;
+  border-radius: 0.5vh;
+}
+
+.newsletter-form button {
+  width: 30%;
+  padding: 10px;
+  background-color: var(--textHeader);
+  color: var(--primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  border: 1px solid var(--textHeader);
+  color: var(--textHeader);
+  background-color: transparent;
+  
+}
+
+footer{
+  margin-top: 10vh;
+ 
+  
+}
+
+footer a{
+  color: var(--textHeader);
+  text-decoration: none;
+}
+
